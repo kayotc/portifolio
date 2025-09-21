@@ -186,7 +186,7 @@ header nav{
 
         .FirstBottom, .FirstRight, .SecondBottom, .SecondLeft, .ThirdLeft, .ThirdTop, .FourthRight, .FourthTop{
             position: absolute;
-            background-image: url('/cards/seta.png');
+            background-image: url('seta.png');
             background-position: center;
             background-size: 80%;
             background-repeat: no-repeat;
@@ -476,13 +476,13 @@ header nav{
         padding: 20px;
     }
     .email{
-        background-image: url(/cards/email.png);
+        background-image: url('email.png');
     }
     .wpp{
-        background-image: url(/cards/phone.png);
+        background-image: url('phone.png');
     }
     .insta{
-        background-image: url(/cards/insta.png);
+        background-image: url('insta.png');
     }
     
 
