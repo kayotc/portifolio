@@ -14,7 +14,7 @@
     text-decoration: none;
     transition: ease-in-out 370ms;
 
-    --color: linear-gradient(75deg, #ff3c00de, #bd0000) text;
+    --color: linear-gradient(75deg, #ff3700f1, #f66600) text;
     --background: linear-gradient(190deg, #0b0c00, #222222);
     --backcard: linear-gradient(275deg, #161414, #1c1c1f);
 }
