@@ -121,7 +121,7 @@ header nav{
     }
 
     h3{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -199,16 +199,13 @@ header nav{
             &:hover{
                 background-color: #ffffff9c;
             }
-
-            &:active{
-                transform: scale(.80);
-            }
         }
 
         .FirstRight, .FourthRight{
             top: 50%;
             right: 0;
             transform: translateY(-50%);
+
         }
         .FirstBottom, .SecondBottom{
             bottom: 0;
@@ -605,6 +602,9 @@ footer{
                     display: none;
                 }
             }
+            h2{
+                font-size: 1.35rem;
+            }
         }
     }
     .wrapper .item{
@@ -612,11 +612,15 @@ footer{
         left: 200%;
     }
     .container .cardsOne{
+        h2,h3{
+            margin-left: 0;
+        }
         p,li{
                 font-size: 1rem;
+                margin-left: 0;
         }
         ul{
-            margin-left: 15%;
+            margin-left: 5%;
         }
         .cardOne{
             button{
@@ -627,6 +631,9 @@ footer{
             }
         }
         .cardTwo{
+            .cardTwoContent{
+                width: 100%;
+            }
             button{
                 top: 75%;
                 height: 40%;
@@ -636,9 +643,13 @@ footer{
     .container .cardsTwo{
         p,li{
                 font-size: 1rem;
+                margin-left: 0;
+        }
+        h3,h2{
+            margin-left: 0;
         }
         ul{
-            margin-left: 15%;
+            margin-left: 5%;
         }
         .cardTree{
             button{
@@ -657,6 +668,9 @@ footer{
                 top: -18%;
                 height: 40%;
             }
+            .cardFourContent{
+                width: 100%;
+            }
         }
         
         
@@ -671,12 +685,14 @@ footer{
     }
 
     #contact .grid .form{
+        flex-grow: 0;
+        width: 85%;
         .png{
             height: 40%;
             width: 40%;
         }
         p{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
     footer{
