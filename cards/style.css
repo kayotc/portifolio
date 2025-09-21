@@ -676,11 +676,33 @@ footer{
         
     }
     .xp{
+        h2{
+            margin-left: 0;
+        }
         p,li{
             font-size: 1rem;
+            margin-left: 0;
+        }
+        h3{
+            font-size: 1.4rem;
+            margin-left: 0;
+        }
+        h4{
+            font-size: 1.3rem;
+            margin-left: 0;
         }
         ul{
             margin-left: 5%;
+        }
+    }
+
+    #contact{
+        h2{
+            margin-left: 0;
+        }
+        p{
+            font-size: 1rem;
+            margin-left: 0;
         }
     }
 
