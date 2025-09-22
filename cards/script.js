@@ -1,14 +1,7 @@
 const fr = document.querySelector(".FirstRight");
-const fb = document.querySelector(".FirstBottom");
-
-const sl = document.querySelector(".SecondLeft");
 const sb = document.querySelector(".SecondBottom");
-
 const tl = document.querySelector(".ThirdLeft");
-const tt = document.querySelector(".ThirdTop");
-
 const ft = document.querySelector(".FourthTop");
-const frt = document.querySelector(".FourthRight");
 
 
 const cardOne = document.querySelector(".cardOne");
@@ -19,7 +12,7 @@ const cardFour = document.querySelector(".cardFour");
 const containerOne = document.querySelector(".cardsOne");
 const containerTwo = document.querySelector(".cardsTwo");
 
-function left(){
+function left() {
     cardOne.classList.toggle("back");
     cardTwo.classList.toggle("back");
     cardTree.classList.toggle("back");
@@ -31,7 +24,7 @@ function left(){
     cardFour.classList.remove("hide");
 }
 
-function right(){
+function right() {
     cardOne.classList.toggle("hide");
     cardTwo.classList.toggle("hide");
     cardTree.classList.toggle("hide");
@@ -43,16 +36,16 @@ function right(){
     cardFour.classList.remove("back");
 }
 
-function topper(){
+function topper() {
     containerOne.classList.toggle("top");
     containerTwo.classList.toggle("top");
 
     containerOne.classList.remove("bottom");
     containerTwo.classList.remove("bottom");
-    
+
 }
 
-function bottom(){
+function bottom() {
     containerOne.classList.toggle("bottom");
     containerTwo.classList.toggle("bottom");
 
@@ -63,27 +56,13 @@ function bottom(){
 fr.addEventListener("click", () => {
     right();
 });
-fb.addEventListener("click", () => {
-    bottom();
-});
 
-sl.addEventListener("click", () => {
-    left();
-});
 sb.addEventListener("click", () => {
     bottom();
 });
 
 tl.addEventListener("click", () => {
     left();
-});
-tt.addEventListener("click", () => {
-    topper();
-});
-
-
-frt.addEventListener("click", () => {
-    right();
 });
 ft.addEventListener("click", () => {
     topper();
@@ -98,20 +77,19 @@ let isDeleting = false;
 
 function typeEffect() {
     if (!isDeleting && index <= text.length) {
-    typingEl.textContent = text.substring(0, index);
-    index++;
-    setTimeout(typeEffect, 120); // velocidade ao digitar
-    } 
+        typingEl.textContent = text.substring(0, index);
+        index++;
+        setTimeout(typeEffect, 120); // velocidade ao digitar
+    }
     else if (isDeleting && index >= 0) {
-    typingEl.textContent = text.substring(0, index);
-    index--;
-    setTimeout(typeEffect, 80); // velocidade ao apagar
-    } 
+        typingEl.textContent = text.substring(0, index);
+        index--;
+        setTimeout(typeEffect, 80); // velocidade ao apagar
+    }
     else {
-    isDeleting = !isDeleting; 
-    setTimeout(typeEffect, 1500); // pausa entre digitar/apagar
+        isDeleting = !isDeleting;
+        setTimeout(typeEffect, 1500); // pausa entre digitar/apagar
     }
 }
 
 typeEffect();
-
